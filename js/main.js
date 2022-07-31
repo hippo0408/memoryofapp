@@ -299,7 +299,7 @@ var mychart = new Chart(ctx, {
     datasets: [{
       label: 'aiko',
       data: [
-        80, 80, 60, 70, 40, 30, 70, 60, 0
+        80, 80, 60, 70, 40, 30, 70, 60, 20
       ],
       backgroundColor: 'rgba(241, 107, 141, 0.5)',
       borderColor: 'rgba(0, 0, 0, 0)',
