@@ -32,7 +32,7 @@
       }
     
     h1 {
-      font-size: 30px;
+      font-size: 20px;
     }
     
     .header-logo {
@@ -40,8 +40,8 @@
     }
     
     .logo {
-        width: 40px;
-        height: 40px;
+        width: 30px;
+        height: 30px;
         border-radius: 5%;
         margin-left: 10px;
       }
@@ -59,7 +59,7 @@
       }
 
       .girl-info p {
-        font-size: 30px;
+        font-size: 20px;
       }
     
       th {
@@ -70,13 +70,12 @@
       }
 
       td {
-        padding-left: 30px;
+        padding-left: 5px;
       }
 
       table {
         width: 100%;
-        font-size: 30px;
-        margin-left: 50px;
+        font-size: 16px;
       }
       
       .chart {
@@ -85,9 +84,8 @@
       }
 
       .chart p {
-        font-size: 40px;
+        font-size: 35px;
       }
     
     }   
-    
     
