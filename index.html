@@ -1,0 +1,1349 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.2.0/chart.min.js"
+        integrity="sha512-VMsZqo0ar06BMtg0tPsdgRADvl0kDHpTbugCBBrL55KmucH6hP9zWdLIWY//OTfMnzz6xWQRxQqsUFefwHuHyg=="
+        crossorigin="anonymous"></script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns@next/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
+
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="header-title">
+            <h1 class="title">Memory of<span> zexy＆pairs</span></h1>
+            <div class="header-logo">
+                <img class="logo" src="images/zexy.jpg">
+                <img class="logo" src="images/pairs.png">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="section">
+            <ul class="ranking-box">
+                <div class="girl-box">
+                    <li>
+                        <div class="image">
+                            <img src="images/saori.jpg">
+                        </div>
+                        <div class="girl-info">
+                            <p>基本情報</p>
+                        </div>
+                        <table>
+                            <tr>
+                                <th>名前：</th>
+                                <td>沙織</td>
+                            </tr>
+                            <tr>
+                                <th>ユーザー名：</th>
+                                <td>s</td>
+                            </tr>
+                            <tr>
+                                <th>使用アプリ：</th>
+                                <td>ゼクシー縁結び</td>
+                            </tr>
+                            <tr>
+                                <th>年齢：</th>
+                                <td>32</td>
+                            </tr>
+                            <tr>
+                                <th>身長：</th>
+                                <td>165cm</td>
+                            </tr>
+                            <tr>
+                                <th>住居地：</th>
+                                <td>平塚</td>
+                            </tr>
+                            <tr>
+                                <th>出身地：</th>
+                                <td>小田原</td>
+                            </tr>
+                            <tr>
+                                <th>出身大学：</th>
+                                <td>青山学院大学英文学科</td>
+                            </tr>
+                            <tr>
+                                <th>職業：</th>
+                                <td>オリーブ国際特許事務所事務<br>(ランドマークタワー37F)</td>
+                            </tr>
+                            <tr>
+                                <th>趣味：</th>
+                                <td>ベンドラメ、恋話</td>
+                            </tr>
+                            <tr>
+                                <th>デート回数：</th>
+                                <td>2回</td>
+                            </tr>
+                            <tr>
+                                <th>備考：</th>
+                                <td>夜中に電話したら振られたよ</td>
+                            </tr>
+                        </table>
+                    </li>
+                    <div class="chart">
+                        <p>87点</p>
+                        <canvas id='saori'></canvas>
+                    </div>
+                </div>
+
+                <div class="girl-box">
+                    <li>
+                        <div class="image">
+                            <img src="images/megumi.jpg">
+                        </div>
+                        <div class="girl-info">
+                            <p>基本情報</p>
+                        </div>
+                        <table>
+                            <tr>
+                                <th>名前：</th>
+                                <td>河野 萌</td>
+                            </tr>
+                            <tr>
+                                <th>ユーザー名：</th>
+                                <td>MK,Meeeeeeee</td>
+                            </tr>
+                            <tr>
+                                <th>使用アプリ：</th>
+                                <td>pairs</td>
+                            </tr>
+                            <tr>
+                                <th>年齢：</th>
+                                <td>29</td>
+                            </tr>
+                            <tr>
+                                <th>身長：</th>
+                                <td>157cm</td>
+                            </tr>
+                            <tr>
+                                <th>住居地：</th>
+                                <td>五反野</td>
+                            </tr>
+                            <tr>
+                                <th>出身地：</th>
+                                <td>北九州市</td>
+                            </tr>
+                            <tr>
+                                <th>出身大学：</th>
+                                <td>安田女子大学</td>
+                            </tr>
+                            <tr>
+                                <th>職業：</th>
+                                <td>薬剤師(アガペ薬局岩本町店)</td>
+                            </tr>
+                            <tr>
+                                <th>趣味：</th>
+                                <td>あゆ、サンロッカーズ、お酒、お笑い</td>
+                            </tr>
+                            <tr>
+                                <th>デート回数：</th>
+                                <td>10回</td>
+                            </tr>
+                            <tr>
+                                <th>備考：</th>
+                                <td>ドライブデートの帰りに振られたよ</td>
+                            </tr>
+                        </table>
+                    </li>
+                    <div class="chart">
+                        <p>83点</p>
+                        <canvas id='megumi'></canvas>
+                    </div>
+                </div>
+
+                <div class=" girl-box">
+                    <li>
+                        <div class="image">
+                            <img src="images/maki.jpg">
+                        </div>
+                        <div class="girl-info">
+                            <p>基本情報</p>
+                        </div>
+                        <table>
+                            <tr>
+                                <th>名前：</th>
+                                <td>まき</td>
+                            </tr>
+                            <tr>
+                                <th>ユーザー名：</th>
+                                <td>MT</td>
+                            </tr>
+                            <tr>
+                                <th>使用アプリ：</th>
+                                <td>pairs</td>
+                            </tr>
+                            <tr>
+                                <th>年齢：</th>
+                                <td>34</td>
+                            </tr>
+                            <tr>
+                                <th>身長：</th>
+                                <td>169cm</td>
+                            </tr>
+                            <tr>
+                                <th>住居地：</th>
+                                <td>学芸大学</td>
+                            </tr>
+                            <tr>
+                                <th>出身地：</th>
+                                <td>横浜</td>
+                            </tr>
+                            <tr>
+                                <th>出身大学：</th>
+                                <td>青山学院大学経済学部</td>
+                            </tr>
+                            <tr>
+                                <th>職業：</th>
+                                <td>Web製作マネージャー</td>
+                            </tr>
+                            <tr>
+                                <th>趣味：</th>
+                                <td>バスケットボール、トランポリン</td>
+                            </tr>
+                            <tr>
+                                <th>デート回数：</th>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <th>備考：</th>
+                                <td>渋谷のトランポリン＆暗闇フィットネスに通ってるよ</td>
+                            </tr>
+                        </table>
+                    </li>
+                    <div class="chart">
+                        <p>80点</p>
+                        <canvas id='maki'></canvas>
+                    </div>
+                </div>
+
+                <div class=" girl-box">
+                    <li>
+                        <div class="image">
+                            <img src="images/akiko.jpg">
+                        </div>
+                        <div class="girl-info">
+                            <p>基本情報</p>
+                        </div>
+                        <table>
+                            <tr>
+                                <th>名前：</th>
+                                <td>星野 阿希子</td>
+                            </tr>
+                            <tr>
+                                <th>ユーザー名：</th>
+                                <td>a</td>
+                            </tr>
+                            <tr>
+                                <th>使用アプリ：</th>
+                                <td>職場でナンパ</td>
+                            </tr>
+                            <tr>
+                                <th>年齢：</th>
+                                <td>32</td>
+                            </tr>
+                            <tr>
+                                <th>身長：</th>
+                                <td>158cm</td>
+                            </tr>
+                            <tr>
+                                <th>住居地：</th>
+                                <td>九品仏</td>
+                            </tr>
+                            <tr>
+                                <th>出身地：</th>
+                                <td>目黒</td>
+                            </tr>
+                            <tr>
+                                <th>出身大学：</th>
+                                <td>高卒(元渋谷109勤務)</td>
+                            </tr>
+                            <tr>
+                                <th>職業：</th>
+                                <td>SE</td>
+                            </tr>
+                            <tr>
+                                <th>趣味：</th>
+                                <td>ドラマ鑑賞、辛い食べ物</td>
+                            </tr>
+                            <tr>
+                                <th>デート回数：</th>
+                                <td>3回</td>
+                            </tr>
+                            <tr>
+                                <th>備考：</th>
+                                <td>元ギャル</td>
+                            </tr>
+                        </table>
+                    </li>
+                    <div class="chart">
+                        <p>79点</p>
+                        <canvas id='akiko'></canvas>
+                    </div>
+                </div>
+
+                <div class=" girl-box">
+                    <li>
+                        <div class="image">
+                            <img src="images/noimage.jpg">
+                        </div>
+                        <div class="girl-info">
+                            <p>基本情報</p>
+                        </div>
+                        <table>
+                            <tr>
+                                <th>名前：</th>
+                                <td>北原 愛子</td>
+                            </tr>
+                            <tr>
+                                <th>ユーザー名：</th>
+                                <td>あい</td>
+                            </tr>
+                            <tr>
+                                <th>使用アプリ：</th>
+                                <td>ゼクシー縁結び</td>
+                            </tr>
+                            <tr>
+                                <th>年齢：</th>
+                                <td>30</td>
+                            </tr>
+                            <tr>
+                                <th>身長：</th>
+                                <td>152cm</td>
+                            </tr>
+                            <tr>
+                                <th>住居地：</th>
+                                <td>浅草</td>
+                            </tr>
+                            <tr>
+                                <th>出身地：</th>
+                                <td>静岡</td>
+                            </tr>
+                            <tr>
+                                <th>出身大学：</th>
+                                <td>青山学院大学英文学科</td>
+                            </tr>
+                            <tr>
+                                <th>職業：</th>
+                                <td>貿易事務</td>
+                            </tr>
+                            <tr>
+                                <th>趣味：</th>
+                                <td>アニメ鑑賞</td>
+                            </tr>
+                            <tr>
+                                <th>デート回数：</th>
+                                <td>1回</td>
+                            </tr>
+                            <tr>
+                                <th>備考：</th>
+                                <td>元彼は台湾出身で遠距離恋愛してた</td>
+                            </tr>
+                        </table>
+                    </li>
+                    <div class="chart">
+                        <p>78点</p>
+                        <canvas id='aiko'></canvas>
+                    </div>
+                </div>
+
+                <div class=" girl-box">
+                    <li>
+                        <div class="image">
+                            <img src="images/sayaka.jpg">
+                        </div>
+                        <div class="girl-info">
+                            <p>基本情報</p>
+                        </div>
+                        <table>
+                            <tr>
+                                <th>名前：</th>
+                                <td>望月 沙也加</td>
+                            </tr>
+                            <tr>
+                                <th>ユーザー名：</th>
+                                <td>s</td>
+                            </tr>
+                            <tr>
+                                <th>使用アプリ：</th>
+                                <td>ゼクシー縁結び</td>
+                            </tr>
+                            <tr>
+                                <th>年齢：</th>
+                                <td>32</td>
+                            </tr>
+                            <tr>
+                                <th>身長：</th>
+                                <td>165cm</td>
+                            </tr>
+                            <tr>
+                                <th>住居地：</th>
+                                <td>板橋区</td>
+                            </tr>
+                            <tr>
+                                <th>出身地：</th>
+                                <td>静岡</td>
+                            </tr>
+                            <tr>
+                                <th>出身大学：</th>
+                                <td>アパレル系専門学校</td>
+                            </tr>
+                            <tr>
+                                <th>職業：</th>
+                                <td>フィットネス事務管理者</td>
+                            </tr>
+                            <tr>
+                                <th>趣味：</th>
+                                <td>ジャニーズ追っかけ</td>
+                            </tr>
+                            <tr>
+                                <th>デート回数：</th>
+                                <td>1回</td>
+                            </tr>
+                            <tr>
+                                <th>備考：</th>
+                                <td>110ｍハードル静岡県8位<br>
+                                    元サンローランショップ店員</td>
+                            </tr>
+                        </table>
+                    </li>
+                    <div class="chart">
+                        <p>77点</p>
+                        <canvas id='sayaka'></canvas>
+                    </div>
+                </div>
+
+                <div class=" girl-box">
+                    <li>
+                        <div class="image">
+                            <img src="images/chimu.jpg">
+                        </div>
+                        <div class="girl-info">
+                            <p>基本情報</p>
+                        </div>
+                        <table>
+                            <tr>
+                                <th>名前：</th>
+                                <td>高山 千尋</td>
+                            </tr>
+                            <tr>
+                                <th>ユーザー名：</th>
+                                <td>ちむ</td>
+                            </tr>
+                            <tr>
+                                <th>使用アプリ：</th>
+                                <td>ゼクシー縁結び</td>
+                            </tr>
+                            <tr>
+                                <th>年齢：</th>
+                                <td>30</td>
+                            </tr>
+                            <tr>
+                                <th>身長：</th>
+                                <td>154cm</td>
+                            </tr>
+                            <tr>
+                                <th>住居地：</th>
+                                <td>中野区</td>
+                            </tr>
+                            <tr>
+                                <th>出身地：</th>
+                                <td>福岡</td>
+                            </tr>
+                            <tr>
+                                <th>出身大学：</th>
+                                <td>中央大学</td>
+                            </tr>
+                            <tr>
+                                <th>職業：</th>
+                                <td>WEB広告代理店</td>
+                            </tr>
+                            <tr>
+                                <th>趣味：</th>
+                                <td>ビール</td>
+                            </tr>
+                            <tr>
+                                <th>デート回数：</th>
+                                <td>2回</td>
+                            </tr>
+                            <tr>
+                                <th>備考：</th>
+                                <td>浅草寺に初詣に行ったよ </td>
+                            </tr>
+                        </table>
+                    </li>
+                    <div class="chart">
+                        <p>76点</p>
+                        <canvas id='chihiro'></canvas>
+                    </div>
+                </div>
+
+                <div class=" girl-box">
+                    <li>
+                        <div class="image">
+                            <img src="images/arisu.png">
+                        </div>
+                        <div class="girl-info">
+                            <p>基本情報</p>
+                        </div>
+                        <table>
+                            <tr>
+                                <th>名前：</th>
+                                <td>筱岡 有利珠</td>
+                            </tr>
+                            <tr>
+                                <th>ユーザー名：</th>
+                                <td>a</td>
+                            </tr>
+                            <tr>
+                                <th>使用アプリ：</th>
+                                <td>pairs</td>
+                            </tr>
+                            <tr>
+                                <th>年齢：</th>
+                                <td>27</td>
+                            </tr>
+                            <tr>
+                                <th>身長：</th>
+                                <td>161cm</td>
+                            </tr>
+                            <tr>
+                                <th>住居地：</th>
+                                <td>東京</td>
+                            </tr>
+                            <tr>
+                                <th>出身地：</th>
+                                <td>東京</td>
+                            </tr>
+                            <tr>
+                                <th>出身大学：</th>
+                                <td>中央大学</td>
+                            </tr>
+                            <tr>
+                                <th>職業：</th>
+                                <td>㈱Good Crew</td>
+                            </tr>
+                            <tr>
+                                <th>趣味：</th>
+                                <td>野球観戦、山田哲人</td>
+                            </tr>
+                            <tr>
+                                <th>デート回数：</th>
+                                <td>1回</td>
+                            </tr>
+                            <tr>
+                                <th>備考：</th>
+                                <td>浅草寺に初詣に行ったよ </td>
+                            </tr>
+                        </table>
+                    </li>
+                    <div class="chart">
+                        <p>75点</p>
+                        <canvas id='arisu'></canvas>
+                    </div>
+                </div>
+
+                <div class=" girl-box">
+                    <li>
+                        <div class="image">
+                            <img src="images/akie.jpg">
+                        </div>
+                        <div class="girl-info">
+                            <p>基本情報</p>
+                        </div>
+                        <table>
+                            <tr>
+                                <th>名前：</th>
+                                <td>小野 あきえ</td>
+                            </tr>
+                            <tr>
+                                <th>ユーザー名：</th>
+                                <td>a</td>
+                            </tr>
+                            <tr>
+                                <th>使用アプリ：</th>
+                                <td>ゼクシー縁結び</td>
+                            </tr>
+                            <tr>
+                                <th>年齢：</th>
+                                <td>29</td>
+                            </tr>
+                            <tr>
+                                <th>身長：</th>
+                                <td>153cm</td>
+                            </tr>
+                            <tr>
+                                <th>住居地：</th>
+                                <td>錦糸町</td>
+                            </tr>
+                            <tr>
+                                <th>出身地：</th>
+                                <td>千葉県</td>
+                            </tr>
+                            <tr>
+                                <th>出身大学：</th>
+                                <td>中央大学</td>
+                            </tr>
+                            <tr>
+                                <th>職業：</th>
+                                <td>ワイン専門商社企画</td>
+                            </tr>
+                            <tr>
+                                <th>趣味：</th>
+                                <td>サカナクション、ダイビング、ボクシング</td>
+                            </tr>
+                            <tr>
+                                <th>デート回数：</th>
+                                <td>2回</td>
+                            </tr>
+                            <tr>
+                                <th>備考：</th>
+                                <td>サカナクションのライブ行く約束はどこへ、、、</td>
+                            </tr>
+                        </table>
+                    </li>
+                    <div class="chart">
+                        <p>73点</p>
+                        <canvas id='akie'></canvas>
+                    </div>
+                </div>
+
+                <div class=" girl-box">
+                    <li>
+                        <div class="image">
+                            <img src="images/saki.jpg">
+                        </div>
+                        <div class="girl-info">
+                            <p>基本情報</p>
+                        </div>
+                        <table>
+                            <tr>
+                                <th>名前：</th>
+                                <td>竹内 沙貴子</td>
+                            </tr>
+                            <tr>
+                                <th>ユーザー名：</th>
+                                <td>s</td>
+                            </tr>
+                            <tr>
+                                <th>使用アプリ：</th>
+                                <td>ゼクシー縁結び</td>
+                            </tr>
+                            <tr>
+                                <th>年齢：</th>
+                                <td>28</td>
+                            </tr>
+                            <tr>
+                                <th>身長：</th>
+                                <td>167cm</td>
+                            </tr>
+                            <tr>
+                                <th>住居地：</th>
+                                <td>東海大学前</td>
+                            </tr>
+                            <tr>
+                                <th>出身地：</th>
+                                <td>横浜</td>
+                            </tr>
+                            <tr>
+                                <th>出身大学：</th>
+                                <td>横浜国立大学</td>
+                            </tr>
+                            <tr>
+                                <th>職業：</th>
+                                <td>富士ゼロックス研究職</td>
+                            </tr>
+                            <tr>
+                                <th>趣味：</th>
+                                <td>陸上</td>
+                            </tr>
+                            <tr>
+                                <th>デート回数：</th>
+                                <td>2回</td>
+                            </tr>
+                            <tr>
+                                <th>備考：</th>
+                                <td>3回目のデート、頭痛でバックレられた</td>
+                            </tr>
+                        </table>
+                    </li>
+                    <div class="chart">
+                        <p>72点</p>
+                        <canvas id='sakiko'></canvas>
+                    </div>
+                </div>
+
+                <div class=" girl-box">
+                    <li>
+                        <div class="image">
+                            <img src="images/chiaki.jpg">
+                        </div>
+                        <div class="girl-info">
+                            <p>基本情報</p>
+                        </div>
+                        <table>
+                            <tr>
+                                <th>名前：</th>
+                                <td>玉田 千晶</td>
+                            </tr>
+                            <tr>
+                                <th>ユーザー名：</th>
+                                <td>アキ</td>
+                            </tr>
+                            <tr>
+                                <th>使用アプリ：</th>
+                                <td>ゼクシー縁結び</td>
+                            </tr>
+                            <tr>
+                                <th>年齢：</th>
+                                <td>32</td>
+                            </tr>
+                            <tr>
+                                <th>身長：</th>
+                                <td>163cm</td>
+                            </tr>
+                            <tr>
+                                <th>住居地：</th>
+                                <td>大山駅</td>
+                            </tr>
+                            <tr>
+                                <th>出身地：</th>
+                                <td>水戸</td>
+                            </tr>
+                            <tr>
+                                <th>出身大学：</th>
+                                <td>東京女子大学</td>
+                            </tr>
+                            <tr>
+                                <th>職業：</th>
+                                <td>金融会社事務職</td>
+                            </tr>
+                            <tr>
+                                <th>趣味：</th>
+                                <td>犬、よさこい</td>
+                            </tr>
+                            <tr>
+                                <th>デート回数：</th>
+                                <td>2回</td>
+                            </tr>
+                            <tr>
+                                <th>備考：</th>
+                                <td>2回目のデート、眠たそうにしてたなぁ、、、</td>
+                            </tr>
+                        </table>
+                    </li>
+                    <div class="chart">
+                        <p>69点</p>
+                        <canvas id='chiaki'></canvas>
+                    </div>
+                </div>
+
+                <div class=" girl-box">
+                    <li>
+                        <div class="image">
+                            <img src="images/kii.jpg">
+                        </div>
+                        <div class="girl-info">
+                            <p>基本情報</p>
+                        </div>
+                        <table>
+                            <tr>
+                                <th>名前：</th>
+                                <td>きよみ</td>
+                            </tr>
+                            <tr>
+                                <th>ユーザー名：</th>
+                                <td>きよみ</td>
+                            </tr>
+                            <tr>
+                                <th>使用アプリ：</th>
+                                <td>ゼクシー縁結び</td>
+                            </tr>
+                            <tr>
+                                <th>年齢：</th>
+                                <td>33</td>
+                            </tr>
+                            <tr>
+                                <th>身長：</th>
+                                <td>155cm</td>
+                            </tr>
+                            <tr>
+                                <th>住居地：</th>
+                                <td>足立区</td>
+                            </tr>
+                            <tr>
+                                <th>出身地：</th>
+                                <td>埼玉</td>
+                            </tr>
+                            <tr>
+                                <th>出身大学：</th>
+                                <td>大学不明</td>
+                            </tr>
+                            <tr>
+                                <th>職業：</th>
+                                <td>転職エージェント</td>
+                            </tr>
+                            <tr>
+                                <th>趣味：</th>
+                                <td>アウトドア</td>
+                            </tr>
+                            <tr>
+                                <th>デート回数：</th>
+                                <td>2回</td>
+                            </tr>
+                            <tr>
+                                <th>備考：</th>
+                                <td>誕生日が同じ<br>
+                                    マシンガントークすぎて疲れた、、、</td>
+                            </tr>
+                        </table>
+                    </li>
+                    <div class="chart">
+                        <p>65点</p>
+                        <canvas id='kiyomi'></canvas>
+                    </div>
+                </div>
+
+                <div class=" girl-box">
+                    <li>
+                        <div class="image">
+                            <img src="images/pippi.jpg">
+                        </div>
+                        <div class="girl-info">
+                            <p>基本情報</p>
+                        </div>
+                        <table>
+                            <tr>
+                                <th>名前：</th>
+                                <td>三浦 萌</td>
+                            </tr>
+                            <tr>
+                                <th>ユーザー名：</th>
+                                <td>ピッピ</td>
+                            </tr>
+                            <tr>
+                                <th>使用アプリ：</th>
+                                <td>pairs</td>
+                            </tr>
+                            <tr>
+                                <th>年齢：</th>
+                                <td>27</td>
+                            </tr>
+                            <tr>
+                                <th>身長：</th>
+                                <td>160cm</td>
+                            </tr>
+                            <tr>
+                                <th>住居地：</th>
+                                <td>浦安</td>
+                            </tr>
+                            <tr>
+                                <th>出身地：</th>
+                                <td>東京</td>
+                            </tr>
+                            <tr>
+                                <th>出身大学：</th>
+                                <td>東京家政大学</td>
+                            </tr>
+                            <tr>
+                                <th>職業：</th>
+                                <td>ディズニーダンサー</td>
+                            </tr>
+                            <tr>
+                                <th>趣味：</th>
+                                <td>ダンス</td>
+                            </tr>
+                            <tr>
+                                <th>デート回数：</th>
+                                <td>2回</td>
+                            </tr>
+                            <tr>
+                                <th>備考：</th>
+                                <td>ラインで振られたけど好きじゃないからね！！</td>
+                            </tr>
+                        </table>
+                    </li>
+                    <div class="chart">
+                        <p>65点</p>
+                        <canvas id='moe'></canvas>
+                    </div>
+                </div>
+
+                <div class=" girl-box">
+                    <li>
+                        <div class="image">
+                            <img src="images/noimage.jpg">
+                        </div>
+                        <div class="girl-info">
+                            <p>基本情報</p>
+                        </div>
+                        <table>
+                            <tr>
+                                <th>名前：</th>
+                                <td>愛子</td>
+                            </tr>
+                            <tr>
+                                <th>ユーザー名：</th>
+                                <td>iko</td>
+                            </tr>
+                            <tr>
+                                <th>使用アプリ：</th>
+                                <td>ゼクシー縁結び</td>
+                            </tr>
+                            <tr>
+                                <th>年齢：</th>
+                                <td>32</td>
+                            </tr>
+                            <tr>
+                                <th>身長：</th>
+                                <td>159cm</td>
+                            </tr>
+                            <tr>
+                                <th>住居地：</th>
+                                <td>流山</td>
+                            </tr>
+                            <tr>
+                                <th>出身地：</th>
+                                <td>流山</td>
+                            </tr>
+                            <tr>
+                                <th>出身大学：</th>
+                                <td>専門学校</td>
+                            </tr>
+                            <tr>
+                                <th>職業：</th>
+                                <td>派遣事務社員</td>
+                            </tr>
+                            <tr>
+                                <th>趣味：</th>
+                                <td>PS4、アイドル、アニメ</td>
+                            </tr>
+                            <tr>
+                                <th>デート回数：</th>
+                                <td>1回</td>
+                            </tr>
+                            <tr>
+                                <th>備考：</th>
+                                <td>電話中にFF7やってんじゃねえよ。<br>
+                                    コントローラ音うるさい</td>
+                            </tr>
+                        </table>
+                    </li>
+                    <div class="chart">
+                        <p>58点</p>
+                        <canvas id='iko'></canvas>
+                    </div>
+                </div>
+
+                <div class=" girl-box">
+                    <li>
+                        <div class="image">
+                            <img src="images/misaki.jpg">
+                        </div>
+                        <div class="girl-info">
+                            <p>基本情報</p>
+                        </div>
+                        <table>
+                            <tr>
+                                <th>名前：</th>
+                                <td>美咲</td>
+                            </tr>
+                            <tr>
+                                <th>ユーザー名：</th>
+                                <td>M</td>
+                            </tr>
+                            <tr>
+                                <th>使用アプリ：</th>
+                                <td>pairs</td>
+                            </tr>
+                            <tr>
+                                <th>年齢：</th>
+                                <td>29</td>
+                            </tr>
+                            <tr>
+                                <th>身長：</th>
+                                <td>160cm</td>
+                            </tr>
+                            <tr>
+                                <th>住居地：</th>
+                                <td>浅草</td>
+                            </tr>
+                            <tr>
+                                <th>出身地：</th>
+                                <td>東京</td>
+                            </tr>
+                            <tr>
+                                <th>出身大学：</th>
+                                <td>不明</td>
+                            </tr>
+                            <tr>
+                                <th>職業：</th>
+                                <td>医療事務</td>
+                            </tr>
+                            <tr>
+                                <th>趣味：</th>
+                                <td>Bリーグ川崎、藤井佑真</td>
+                            </tr>
+                            <tr>
+                                <th>デート回数：</th>
+                                <td>1回</td>
+                            </tr>
+                            <tr>
+                                <th>備考：</th>
+                                <td>めぐにBリーグデート断られたから、誘った。</td>
+                            </tr>
+                        </table>
+                    </li>
+                    <div class="chart">
+                        <p>54点</p>
+                        <canvas id='misaki'></canvas>
+                    </div>
+                </div>
+
+                <div class=" girl-box">
+                    <li>
+                        <div class="image">
+                            <img src="images/fumi.png">
+                        </div>
+                        <div class="girl-info">
+                            <p>基本情報</p>
+                        </div>
+                        <table>
+                            <tr>
+                                <th>名前：</th>
+                                <td>猪瀬 ふみ</td>
+                            </tr>
+                            <tr>
+                                <th>ユーザー名：</th>
+                                <td>ふみ</td>
+                            </tr>
+                            <tr>
+                                <th>使用アプリ：</th>
+                                <td>ゼクシー縁結び</td>
+                            </tr>
+                            <tr>
+                                <th>年齢：</th>
+                                <td>34</td>
+                            </tr>
+                            <tr>
+                                <th>身長：</th>
+                                <td>161cm</td>
+                            </tr>
+                            <tr>
+                                <th>住居地：</th>
+                                <td>京王永山</td>
+                            </tr>
+                            <tr>
+                                <th>出身地：</th>
+                                <td>川崎</td>
+                            </tr>
+                            <tr>
+                                <th>出身大学：</th>
+                                <td>不明</td>
+                            </tr>
+                            <tr>
+                                <th>職業：</th>
+                                <td>医療事務</td>
+                            </tr>
+                            <tr>
+                                <th>趣味：</th>
+                                <td>美術館巡り</td>
+                            </tr>
+                            <tr>
+                                <th>デート回数：</th>
+                                <td>1回</td>
+                            </tr>
+                            <tr>
+                                <th>備考：</th>
+                                <td>多摩センターのピザ屋美味しかった記憶しかない</td>
+                            </tr>
+                        </table>
+                    </li>
+                    <div class="chart">
+                        <p>51点</p>
+                        <canvas id='fumi'></canvas>
+                    </div>
+                </div>
+
+                <div class=" girl-box">
+                    <li>
+                        <div class="image">
+                            <img src="images/sakiko.jpg">
+                        </div>
+                        <div class="girl-info">
+                            <p>基本情報</p>
+                        </div>
+                        <table>
+                            <tr>
+                                <th>名前：</th>
+                                <td>小池 咲子</td>
+                            </tr>
+                            <tr>
+                                <th>ユーザー名：</th>
+                                <td>S</td>
+                            </tr>
+                            <tr>
+                                <th>使用アプリ：</th>
+                                <td>pairs</td>
+                            </tr>
+                            <tr>
+                                <th>年齢：</th>
+                                <td>30</td>
+                            </tr>
+                            <tr>
+                                <th>身長：</th>
+                                <td>162cm</td>
+                            </tr>
+                            <tr>
+                                <th>住居地：</th>
+                                <td>品川</td>
+                            </tr>
+                            <tr>
+                                <th>出身地：</th>
+                                <td>青森</td>
+                            </tr>
+                            <tr>
+                                <th>出身大学：</th>
+                                <td>青森大学</td>
+                            </tr>
+                            <tr>
+                                <th>職業：</th>
+                                <td>忘れた</td>
+                            </tr>
+                            <tr>
+                                <th>趣味：</th>
+                                <td>バスケ、パン</td>
+                            </tr>
+                            <tr>
+                                <th>デート回数：</th>
+                                <td>4回</td>
+                            </tr>
+                            <tr>
+                                <th>備考：</th>
+                                <td>誘われたバスケがつまらなすぎて連絡返すの辞めました</td>
+                            </tr>
+                        </table>
+                    </li>
+                    <div class="chart">
+                        <p>43点</p>
+                        <canvas id='saki'></canvas>
+                    </div>
+                </div>
+
+                <div class=" girl-box">
+                    <li>
+                        <div class="image">
+                            <img src="images/kei.jpg">
+                        </div>
+                        <div class="girl-info">
+                            <p>基本情報</p>
+                        </div>
+                        <table>
+                            <tr>
+                                <th>名前：</th>
+                                <td>ケイ</td>
+                            </tr>
+                            <tr>
+                                <th>ユーザー名：</th>
+                                <td>K</td>
+                            </tr>
+                            <tr>
+                                <th>使用アプリ：</th>
+                                <td>pairs</td>
+                            </tr>
+                            <tr>
+                                <th>年齢：</th>
+                                <td>34</td>
+                            </tr>
+                            <tr>
+                                <th>身長：</th>
+                                <td>162cm</td>
+                            </tr>
+                            <tr>
+                                <th>住居地：</th>
+                                <td>等々力</td>
+                            </tr>
+                            <tr>
+                                <th>出身地：</th>
+                                <td>長野</td>
+                            </tr>
+                            <tr>
+                                <th>出身大学：</th>
+                                <td>専門学校</td>
+                            </tr>
+                            <tr>
+                                <th>職業：</th>
+                                <td>医療系</td>
+                            </tr>
+                            <tr>
+                                <th>趣味：</th>
+                                <td>散歩</td>
+                            </tr>
+                            <tr>
+                                <th>デート回数：</th>
+                                <td>1回</td>
+                            </tr>
+                            <tr>
+                                <th>備考：</th>
+                                <td>1つ5000円のパフェをご馳走しました、、、</td>
+                            </tr>
+                        </table>
+                    </li>
+                    <div class="chart">
+                        <p>42点</p>
+                        <canvas id='kei'></canvas>
+                    </div>
+                </div>
+
+                <div class=" girl-box">
+                    <li>
+                        <div class="image">
+                            <img src="images/aki.jpg">
+                        </div>
+                        <div class="girl-info">
+                            <p>基本情報</p>
+                        </div>
+                        <table>
+                            <tr>
+                                <th>名前：</th>
+                                <td>中田 安紀</td>
+                            </tr>
+                            <tr>
+                                <th>ユーザー名：</th>
+                                <td>aki</td>
+                            </tr>
+                            <tr>
+                                <th>使用アプリ：</th>
+                                <td>ゼクシー縁結び</td>
+                            </tr>
+                            <tr>
+                                <th>年齢：</th>
+                                <td>30</td>
+                            </tr>
+                            <tr>
+                                <th>身長：</th>
+                                <td>160cm</td>
+                            </tr>
+                            <tr>
+                                <th>住居地：</th>
+                                <td>川崎</td>
+                            </tr>
+                            <tr>
+                                <th>出身地：</th>
+                                <td>横浜</td>
+                            </tr>
+                            <tr>
+                                <th>出身大学：</th>
+                                <td>専門学校</td>
+                            </tr>
+                            <tr>
+                                <th>職業：</th>
+                                <td>保育士</td>
+                            </tr>
+                            <tr>
+                          
+                                <th>趣味：</th>
+                                <td>アウトドア</td>
+                            </tr>
+                            <tr>
+                                <th>デート回数：</th>
+                                <td>1回</td>
+                            </tr>
+                            <tr>
+                                <th>備考：</th>
+                                <td>初回メッセージで「ケイスケくん」って呼ばれました。<br>
+                                    ランチで予約出来ておらず、1万円ぼったくられました。</td>
+                            </tr>
+                        </table>
+                    </li>
+                    <div class="chart">
+                        <p>39点</p>
+                        <canvas id='aki'></canvas>
+                    </div>
+                </div>
+
+                <div class=" girl-box">
+                    <li>
+                        <div class="image">
+                            <img src="images/noimage.jpg">
+                        </div>
+                        <div class="girl-info">
+                            <p>基本情報</p>
+                        </div>
+                        <table>
+                            <tr>
+                                <th>名前：</th>
+                                <td>みき</td>
+                            </tr>
+                            <tr>
+                                <th>ユーザー名：</th>
+                                <td>M</td>
+                            </tr>
+                            <tr>
+                                <th>使用アプリ：</th>
+                                <td>ゼクシー縁結び</td>
+                            </tr>
+                            <tr>
+                                <th>年齢：</th>
+                                <td>29</td>
+                            </tr>
+                            <tr>
+                                <th>身長：</th>
+                                <td>160cm</td>
+                            </tr>
+                            <tr>
+                                <th>住居地：</th>
+                                <td>??</td>
+                            </tr>
+                            <tr>
+                                <th>出身地：</th>
+                                <td>??</td>
+                            </tr>
+                            <tr>
+                                <th>出身大学：</th>
+                                <td>??</td>
+                            </tr>
+                            <tr>
+                                <th>職業：</th>
+                                <td>介護士</td>
+                            </tr>
+                            <tr>
+                                <th>趣味：</th>
+                                <td>アウトドア</td>
+                            </tr>
+                            <tr>
+                                <th>デート回数：</th>
+                                <td>1回</td>
+                            </tr>
+                            <tr>
+                                <th>備考：</th>
+                                <td>全く笑わないからターミネーターかと思った。<br>
+                                    お洒落なイタリアンのパスタを早食いして20分で退店した。</td>
+                            </tr>
+                        </table>
+                    </li>
+                    <div class="chart">
+                        <p>20点</p>
+                        <canvas id='miki'></canvas>
+                    </div>
+                </div>
+
+
+
+
+            </ul>
+
+            <script src="js/main.js"></script>
+</body>
+
+</html>
