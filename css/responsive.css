@@ -1,4 +1,4 @@
-@media(max-width:780px){
+@media(max-width:1000px){
 
 body {
   overflow-x: hidden;
@@ -11,7 +11,7 @@ ul {
 
 .girl-box {
   width: 100%;
-  margin: margin: 10px 65px 20px -10px;
+  margin: margin: 10px 75px 20px -5px;
 }
 
 .header {
