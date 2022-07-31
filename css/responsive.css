@@ -1,11 +1,22 @@
 @media(max-width:780px){
 
+body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+ul {
+    width: 100%;
+}
+
 .girl-box {
   width: 100%;
+  margin: 20px 55px 20px -20px;
 }
 
 .header {
   height: 80px;
+  width: 100%;
   }
 
 .header-title {
